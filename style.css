@@ -1,0 +1,76 @@
+/* Center the form */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the search bar */
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 24px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+/* Style buton container*/
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300pm;
+    margin-top: 10px;
+}
+
+input[type="submit"],
+button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: #4285F4;
+    color: white;
+    border: none; 
+    border-radius: 24px; 
+    cursor: pointer; 
+    margin-right: 10px;
+}
+
+/* Hover effect for buttons */
+input[type="submit"]:hover,
+button:hover {
+    background-color: #357ae8; 
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; 
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #4285F4;           
+}

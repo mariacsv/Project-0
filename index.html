@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
-        <link rel="stylesheet" href="C:\Users\maris\EdProjects\Project0\style.css"
+        <link rel="stylesheet" href="style.css"
     </head>
     <body>
         <header>
@@ -18,9 +18,11 @@
         <main>
             <form action="https://www.google.com/search" method="GET" id="SearchForm">
                 <input type="text" name="q" placeholder="Search" required>
-                <input type="submit" name="Google Search">
+                <div class="button-container">
+                    <input type="submit" name="Google Search">
+                    <button type="button" id="luckyButton">I'm Feeling Lucky</button>
+                </div>
             </form>
-            <button id="luckyButton">I'm Feeling Lucky</button>
         </main>
         <script>
             document.getElementById('luckyButton').addEventListener('click', function() {
