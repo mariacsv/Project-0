@@ -13,14 +13,20 @@
                     <li><a href="image.html">Image search</a></li>
                     <li><a href="advanced.html">Advanced search</a></li>
                 </ul>
-            </nav>
+            </nav>      
         </header>
         <main>
-            <form action="https://www.google.com/search">
-                <input type="text" name="q">
+            <form action="https://www.google.com/search" method="GET" id="SearchForm">
+                <input type="text" name="q" placeholder="Search" required>
                 <input type="submit" name="Google Search">
             </form>
             <button id="luckyButton">I'm Feeling Lucky</button>
         </main>
+        <script>
+            document.getElementById('luckyButton').addEventListener('click', function() {
+                const query = document.querySelector('input[name="q"]').value;
+                window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}&btnI`;
+            });
+        </script>
     </body>
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search Images</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="index.html">Back to Google Search</a></li>
+            </ul>
+        </header>
+        <main>
+            <form action="https://images.google.com/" method="GET" id="SearchImage">
+                <input type="text" name="q" placeholder="Search images ..." required>
+                <input type="hidden" name="tbm" value="isch">
+                <input type="submit" value="Search Images">
+            </form>
+        </main>
+    </body>
+</html>
